@@ -1,3 +1,9 @@
+---
+layout: single
+title: ""
+permalink: /
+---
+
 # Leo Shaposhnik
 
 PhD student in theoretical physics at FU Berlin.
