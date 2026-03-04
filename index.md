@@ -17,6 +17,14 @@ I am always open for collaboration and exchange of ideas.
 
 Contact me via email: <span class="email-obf" data-user="leoshaposhnik" data-domain="gmail.com"></span>
 
+<div class="social-buttons">
+  <a class="social-btn" href="https://x.com/chumwonktonodI" target="_blank" rel="noopener">X</a>
+  <a class="social-btn" href="https://www.linkedin.com/in/leo-shaposhnik-7533801b5/" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="social-btn" href="https://github.com/ReplicaWormhole" target="_blank" rel="noopener">GitHub</a>
+  <a class="social-btn" href="https://orcid.org/0000-0001-8258-6233" target="_blank" rel="noopener">ORCID</a>
+  <a class="social-btn" href="https://inspirehep.net/authors/2605231" target="_blank" rel="noopener">INSPIRE</a>
+</div>
+
 <script>
 (function () {
   const el = document.querySelector(".email-obf");
@@ -28,4 +36,3 @@ Contact me via email: <span class="email-obf" data-user="leoshaposhnik" data-dom
   el.setAttribute("aria-label", addr);
 })();
 </script>
-
