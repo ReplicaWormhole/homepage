@@ -1,0 +1,8 @@
+title: "Leo Shaposhnik"
+description: "Research in holography, quantum information, and emergent spacetime"
+
+theme: minimal-mistakes-jekyll
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
