@@ -5,10 +5,8 @@
 @import "minimal-mistakes";
 
 .header-link,
-.anchor-link {
+.anchor-link,
+.anchorjs-link,
+.octicon-link {
   display: none !important;
-}
-
-.page__title {
-  display: none;
 }
