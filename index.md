@@ -4,11 +4,11 @@ title: ""
 permalink: /
 ---
 
-# Leo Shaposhnik
 
-PhD student in theoretical physics at FU Berlin.
+Hi! I am a PhD student in theoretical physics at FU Berlin.
 
-I am interested in the study of spacetime, quantum information and computer science.
+I am interested in the study of spacetime, its connection to quantum mechanics,
+quantum chaos and most mathematics
 
 ## Research
 
