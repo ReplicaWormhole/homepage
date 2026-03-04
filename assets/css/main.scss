@@ -38,6 +38,11 @@
   transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
 }
 
+.social-btn:link,
+.social-btn:visited {
+  color: #e6e6e6;
+}
+
 .social-btn:hover,
 .social-btn:focus {
   transform: translateY(-1px);
