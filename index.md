@@ -18,11 +18,26 @@ I am always open for collaboration and exchange of ideas.
 Contact me via email: <span class="email-obf" data-user="leoshaposhnik" data-domain="gmail.com"></span>
 
 <div class="social-buttons">
-  <a class="social-btn" href="https://x.com/chumwonktonodI" target="_blank" rel="noopener">X</a>
-  <a class="social-btn" href="https://www.linkedin.com/in/leo-shaposhnik-7533801b5/" target="_blank" rel="noopener">LinkedIn</a>
-  <a class="social-btn" href="https://github.com/ReplicaWormhole" target="_blank" rel="noopener">GitHub</a>
-  <a class="social-btn" href="https://orcid.org/0000-0001-8258-6233" target="_blank" rel="noopener">ORCID</a>
-  <a class="social-btn" href="https://inspirehep.net/authors/2605231" target="_blank" rel="noopener">INSPIRE</a>
+  <a class="social-btn" href="https://x.com/chumwonktonodI" target="_blank" rel="noopener" aria-label="X">
+    <img class="social-icon" src="https://cdn.simpleicons.org/x/ffffff" alt="" />
+    <span class="sr-only">X</span>
+  </a>
+  <a class="social-btn" href="https://www.linkedin.com/in/leo-shaposhnik-7533801b5/" target="_blank" rel="noopener" aria-label="LinkedIn">
+    <img class="social-icon" src="https://cdn.simpleicons.org/linkedin/ffffff" alt="" />
+    <span class="sr-only">LinkedIn</span>
+  </a>
+  <a class="social-btn" href="https://github.com/ReplicaWormhole" target="_blank" rel="noopener" aria-label="GitHub">
+    <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
+    <span class="sr-only">GitHub</span>
+  </a>
+  <a class="social-btn" href="https://orcid.org/0000-0001-8258-6233" target="_blank" rel="noopener" aria-label="ORCID">
+    <img class="social-icon" src="https://cdn.simpleicons.org/orcid/ffffff" alt="" />
+    <span class="sr-only">ORCID</span>
+  </a>
+  <a class="social-btn" href="https://inspirehep.net/authors/2605231" target="_blank" rel="noopener" aria-label="INSPIRE-HEP">
+    <span class="social-icon text-icon">IH</span>
+    <span class="sr-only">INSPIRE-HEP</span>
+  </a>
 </div>
 
 <script>
