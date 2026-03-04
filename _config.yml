@@ -2,6 +2,7 @@ title: "Leo Shaposhnik"
 description: "Research in holography, quantum information, and emergent spacetime"
 
 remote_theme: "mmistakes/minimal-mistakes"
+masthead_title: ""
 
 markdown: kramdown
 kramdown:
