@@ -8,8 +8,11 @@ permalink: /research/
 
 My work focuses on the emergence of spacetime from quantum entanglement.
 
-Topics include:
+I am particularly interested in:
 
-- holographic quantum error correcting codes  
-- edge modes in gravity  
-- chaotic dynamics in holographic systems  
+- holographic quantum error correction
+- many-body physics
+- quantum chaos
+- random matrix theory
+- operator algebras
+- edge modes in gauge theories
