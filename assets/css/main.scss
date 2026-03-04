@@ -14,3 +14,32 @@
 .email-obf {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e6e6e6;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
