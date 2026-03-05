@@ -2,7 +2,9 @@
 layout: single
 title: "On Science in the age of AI"
 date: 2026-03-04
+show_in_blog: true
 ---
+
 Ones everyone with access to the these systems can let them essentially write *correct* papers autonomously, the value of a paper as a scientific contribution has vanished. Unfortunately, the current system of academia is based on using papers as a benchmark of the quality of scientists.
 What journals they published in, how many citations these papers have, what grants the person got - these benchmarks are what is used to judge scientists for employment.
 However, these are terrible measures.
