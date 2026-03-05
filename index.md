@@ -15,7 +15,7 @@ Currently I spent a lot of time to try to figure out how to best use AI agents t
 
 I am always open for collaboration and exchange of ideas.
 
-Contact me via email: <span class="email-obf" data-user="leoshaposhnik" data-domain="gmail.com"></span>
+Contact me via email: <span class="email-obf" data-user="<firstnamelastname>" data-domain="gmail.com"></span>
 
 <div class="social-buttons">
   <a class="social-btn" href="https://x.com/chumwonktonodI" target="_blank" rel="noopener" aria-label="X">
