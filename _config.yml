@@ -3,6 +3,10 @@ description: "Research in holography, quantum information, and emergent spacetim
 
 remote_theme: "mmistakes/minimal-mistakes"
 
+url: "https://replicawormhole.github.io"
+baseurl: "/homepage"
+repository: "ReplicaWormhole/homepage"
+
 markdown: kramdown
 kramdown:
   math_engine: mathjax
