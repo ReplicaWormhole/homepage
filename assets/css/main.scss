@@ -86,3 +86,40 @@
   white-space: nowrap;
   border: 0;
 }
+
+.footnotes {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 0.95rem;
+}
+
+.footnotes::before {
+  content: "References";
+  display: block;
+  margin-bottom: 0.85rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.footnotes ol {
+  margin-left: 1.25rem;
+}
+
+.footnotes li {
+  margin-bottom: 0.55rem;
+  padding-left: 0.15rem;
+}
+
+.footnote {
+  vertical-align: super;
+  font-size: 0.72em;
+  line-height: 0;
+}
+
+.footnote,
+.footnotes a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
