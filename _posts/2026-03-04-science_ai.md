@@ -5,8 +5,8 @@ date: 2026-03-04
 published: true
 ---
 
-We are facing increasingly superhuman abilities of AI systems to perform exploratory tasks in fundamental science. Two days ago Sidharth Hariharan and Maryna Viazovska together with Chris Birkbeck, Seewoo Lee, Gareth Ma and Math. Inc. announced the formalization of the sphere packing problem in dimensions 8 and 24 (https://www.math.inc/sphere-packing). 
-Yesterday OpenAI announced that an internal model helped demonstrate the non-vanishing of single-minus amplitudes for gravitons (https://openai.com/index/extending-single-minus-amplitudes-to-gravitons/) extending their previous result to spin-2 particles.
+We are facing increasingly superhuman abilities of AI systems to perform exploratory tasks in fundamental science. Two days ago Sidharth Hariharan and Maryna Viazovska together with Chris Birkbeck, Seewoo Lee, Gareth Ma and Math. Inc. announced the formalization of the sphere packing problem in dimensions 8 and 24.[^1]
+Yesterday OpenAI announced that an internal model helped demonstrate the non-vanishing of single-minus amplitudes for gravitons,[^2] extending their previous result to spin-2 particles.
 These results demonstrate that, while AI is maybe not there yet to autonomously drive research,
 it is incredibly good at doing what we already know how to do *in principle* but would need to work very hard to do.
 In view of these developments it is important that we, humanity as a whole, and scientists especially, have to think deeply about what it will mean to do science in an age, where everything most of what was "hard labour" becomes "trivial".
@@ -31,3 +31,6 @@ Because of this disdain for the journal system, we need to reformulate how scien
 Science is a collaborative effort that encompasses people all around the world and I think that solving problems, not publishing papers should become the main objective.
 Because of this, I think that we will have to construct a structure in which we can constructively work together to solve the problems that exist. I do not think that every problem has to be applied, on the contrary, I think that being able to do research for the pure beauty of the subject has been a tremendously fruitful and beautiful force driving a large portion of the most impactful work.
 Currently, most of the knowledge in theoretical physics and mathematics lives scattered across millions of pages 
+
+[^1]: [Math. Inc., "Formalizing sphere packing in dimensions 8 and 24"](https://www.math.inc/sphere-packing)
+[^2]: [OpenAI, "Extending single-minus amplitudes to gravitons"](https://openai.com/index/extending-single-minus-amplitudes-to-gravitons/)
