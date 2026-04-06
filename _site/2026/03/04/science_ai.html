@@ -1,0 +1,395 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>On Science in the age of AI - Leo Shaposhnik</title>
+<meta name="description" content="We are facing increasingly superhuman abilities of AI systems to perform exploratory tasks in fundamental science. Two days ago Sidharth Hariharan and Maryna Viazovska together with Chris Birkbeck, Seewoo Lee, Gareth Ma and Math. Inc. announced the formalization of the sphere packing problem in dimensions 8 and 24.1 Yesterday OpenAI announced that an internal model helped demonstrate the non-vanishing of single-minus amplitudes for gravitons,2 extending their previous result to spin-2 particles. These results demonstrate that, while AI is maybe not there yet to autonomously drive research, it is incredibly good at doing what we already know how to do in principle but would need to work very hard to do. In view of these developments it is important that we, humanity as a whole, and scientists especially, have to think deeply about what it will mean to do science in an age, where everything most of what was “hard labour” becomes “trivial”. Currently, the value of an academic is determined primarily by KPIs: The number of papers they published, how often the papers were cited, what journals they published in, what grants the person got - these benchmarks are what is used to judge scientists for employment at a university or research institute. However, these are terrible measures to optimize for. These are not measures that allow you to think about hard problems, because working on hard problems takes time.  To publish many papers, you have to write papers about every minute increment you produced, independent of whether anyone cares. Every day there are O(100) papers that compute an arbitrary observable for an arbitrary theory, repeating a calculation that was done many times for a new system, without teaching us any new lessons that matter. All because people are pressured to publish as much as possible, otherwise they will not be employed. In an age in which you can ask an AI to generate the content of an entire paper, this will only become worse.                 Math. Inc., “Formalizing sphere packing in dimensions 8 and 24” &#8617;                 OpenAI, “Extending single-minus amplitudes to gravitons” &#8617;">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Leo Shaposhnik">
+<meta property="og:title" content="On Science in the age of AI">
+<meta property="og:url" content="https://replicawormhole.github.io/homepage/2026/03/04/science_ai.html">
+
+
+  <meta property="og:description" content="We are facing increasingly superhuman abilities of AI systems to perform exploratory tasks in fundamental science. Two days ago Sidharth Hariharan and Maryna Viazovska together with Chris Birkbeck, Seewoo Lee, Gareth Ma and Math. Inc. announced the formalization of the sphere packing problem in dimensions 8 and 24.1 Yesterday OpenAI announced that an internal model helped demonstrate the non-vanishing of single-minus amplitudes for gravitons,2 extending their previous result to spin-2 particles. These results demonstrate that, while AI is maybe not there yet to autonomously drive research, it is incredibly good at doing what we already know how to do in principle but would need to work very hard to do. In view of these developments it is important that we, humanity as a whole, and scientists especially, have to think deeply about what it will mean to do science in an age, where everything most of what was “hard labour” becomes “trivial”. Currently, the value of an academic is determined primarily by KPIs: The number of papers they published, how often the papers were cited, what journals they published in, what grants the person got - these benchmarks are what is used to judge scientists for employment at a university or research institute. However, these are terrible measures to optimize for. These are not measures that allow you to think about hard problems, because working on hard problems takes time.  To publish many papers, you have to write papers about every minute increment you produced, independent of whether anyone cares. Every day there are O(100) papers that compute an arbitrary observable for an arbitrary theory, repeating a calculation that was done many times for a new system, without teaching us any new lessons that matter. All because people are pressured to publish as much as possible, otherwise they will not be employed. In an age in which you can ask an AI to generate the content of an entire paper, this will only become worse.                 Math. Inc., “Formalizing sphere packing in dimensions 8 and 24” &#8617;                 OpenAI, “Extending single-minus amplitudes to gravitons” &#8617;">
+
+
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-03-04T00:00:00+01:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://replicawormhole.github.io/homepage/2026/03/04/science_ai.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/homepage/feed.xml" type="application/atom+xml" rel="alternate" title="Leo Shaposhnik Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/homepage/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
+
+<script>
+MathJax = {
+  tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var containers = document.querySelectorAll(".page__content");
+  var urlPattern = /https?:\/\/[^\s<]+/g;
+  var skipTags = new Set(["A", "CODE", "PRE", "SCRIPT", "STYLE", "TEXTAREA"]);
+
+  function trimUrl(match) {
+    var url = match;
+    var trailing = "";
+
+    while (/[.,!?;:]+$/.test(url)) {
+      trailing = url.slice(-1) + trailing;
+      url = url.slice(0, -1);
+    }
+
+    while (url.endsWith(")")) {
+      var opens = (url.match(/\(/g) || []).length;
+      var closes = (url.match(/\)/g) || []).length;
+      if (closes <= opens) {
+        break;
+      }
+      trailing = ")" + trailing;
+      url = url.slice(0, -1);
+    }
+
+    return { url: url, trailing: trailing };
+  }
+
+  function shouldSkip(node) {
+    for (var el = node.parentElement; el; el = el.parentElement) {
+      if (skipTags.has(el.tagName)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  containers.forEach(function (container) {
+    var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+    var textNodes = [];
+    var current;
+
+    while ((current = walker.nextNode())) {
+      if (!current.nodeValue || !urlPattern.test(current.nodeValue) || shouldSkip(current)) {
+        urlPattern.lastIndex = 0;
+        continue;
+      }
+      urlPattern.lastIndex = 0;
+      textNodes.push(current);
+    }
+
+    textNodes.forEach(function (node) {
+      var text = node.nodeValue;
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var match;
+
+      urlPattern.lastIndex = 0;
+      while ((match = urlPattern.exec(text)) !== null) {
+        var trimmed = trimUrl(match[0]);
+        var start = match.index;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var link = document.createElement("a");
+        link.href = trimmed.url;
+        link.textContent = trimmed.url;
+        fragment.appendChild(link);
+
+        if (trimmed.trailing) {
+          fragment.appendChild(document.createTextNode(trimmed.trailing));
+        }
+
+        lastIndex = match.index + match[0].length;
+      }
+
+      if (lastIndex === 0) {
+        return;
+      }
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      node.parentNode.replaceChild(fragment, node);
+    });
+  });
+});
+</script>
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/homepage/">
+          Leo Shaposhnik
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/homepage/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/homepage/research/"
+                
+                
+              >Research</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/homepage/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/homepage/cv/leo_shaposhnik_cv.pdf"
+                
+                
+              >CV</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="On Science in the age of AI">
+    <meta itemprop="description" content="We are facing increasingly superhuman abilities of AI systems to perform exploratory tasks in fundamental science. Two days ago Sidharth Hariharan and Maryna Viazovska together with Chris Birkbeck, Seewoo Lee, Gareth Ma and Math. Inc. announced the formalization of the sphere packing problem in dimensions 8 and 24.1Yesterday OpenAI announced that an internal model helped demonstrate the non-vanishing of single-minus amplitudes for gravitons,2 extending their previous result to spin-2 particles.These results demonstrate that, while AI is maybe not there yet to autonomously drive research,it is incredibly good at doing what we already know how to do in principle but would need to work very hard to do.In view of these developments it is important that we, humanity as a whole, and scientists especially, have to think deeply about what it will mean to do science in an age, where everything most of what was “hard labour” becomes “trivial”.Currently, the value of an academic is determined primarily by KPIs: The number of papers they published, how often the papers were cited, what journals they published in, what grants the person got - these benchmarks are what is used to judge scientists for employment at a university or research institute.However, these are terrible measures to optimize for.These are not measures that allow you to think about hard problems, because working on hard problems takes time. To publish many papers, you have to write papers about every minute increment you produced, independent of whether anyone cares. Every day there are O(100) papers that compute an arbitrary observable for an arbitrary theory, repeating a calculation that was done many times for a new system, without teaching us any new lessons that matter.All because people are pressured to publish as much as possible, otherwise they will not be employed. In an age in which you can ask an AI to generate the content of an entire paper, this will only become worse.            Math. Inc., “Formalizing sphere packing in dimensions 8 and 24” &#8617;              OpenAI, “Extending single-minus amplitudes to gravitons” &#8617;      ">
+    <meta itemprop="datePublished" content="2026-03-04T00:00:00+01:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://replicawormhole.github.io/homepage/2026/03/04/science_ai.html" itemprop="url">On Science in the age of AI
+</a>
+          </h1>
+          
+
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>We are facing increasingly superhuman abilities of AI systems to perform exploratory tasks in fundamental science. Two days ago Sidharth Hariharan and Maryna Viazovska together with Chris Birkbeck, Seewoo Lee, Gareth Ma and Math. Inc. announced the formalization of the sphere packing problem in dimensions 8 and 24.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>
+Yesterday OpenAI announced that an internal model helped demonstrate the non-vanishing of single-minus amplitudes for gravitons,<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> extending their previous result to spin-2 particles.
+These results demonstrate that, while AI is maybe not there yet to autonomously drive research,
+it is incredibly good at doing what we already know how to do <em>in principle</em> but would need to work very hard to do.
+In view of these developments it is important that we, humanity as a whole, and scientists especially, have to think deeply about what it will mean to do science in an age, where everything most of what was “hard labour” becomes “trivial”.
+Currently, the value of an academic is determined primarily by KPIs: The number of papers they published, how often the papers were cited, what journals they published in, what grants the person got - these benchmarks are what is used to judge scientists for employment at a university or research institute.
+However, these are terrible measures to optimize for.
+These are not measures that allow you to think about hard problems, because working on hard problems takes time. 
+To publish many papers, you have to write papers about every minute increment you produced, independent of whether anyone cares. Every day there are O(100) papers that compute an arbitrary observable for an arbitrary theory, repeating a calculation that was done many times for a new system, without teaching us any new lessons that matter.
+All because people are pressured to publish as much as possible, otherwise they will not be employed. In an age in which you can ask an AI to generate the content of an entire paper, this will only become worse.</p>
+
+<p>How will we determine what matters?</p>
+
+<p>Peer review and therefore the journal a paper appeared in is often a farse, since the referees have no real incentive to invest a lot of time to review a paper and are pressured to do more in an increasingly short amount of time.
+More importantly, in an age where essentially all papers are first submitted as preprints, no-one cares if a journal accepted the paper, because the ideas exist in the preprint and everyone can use them, independently of the subjective opinion of two or three arbitrary people.
+What matters is, if the individual scientists who use the content of a paper for their own work, themselves have understood the content and believe its correctness. 
+Using peer review as a stamp of approval for an idea only encourages laziness and scientific disingenuity.
+If you want to use and idea, because you believe in it, make sure that you have good reason to do so.</p>
+
+<p>The journal system primarily exists for university administrations to have a reason, why to higher a person. 
+I do not believe that “this makes decision for the university admin making easier” is a good use of taxpayers money.</p>
+
+<p>Because of this disdain for the journal system, we need to reformulate how science works and build frameworks in which we can collaborate on the problems we deem important. 
+Science is a collaborative effort that encompasses people all around the world and I think that solving problems, not publishing papers should become the main objective.
+Because of this, I think that we will have to construct a structure in which we can constructively work together to solve the problems that exist. I do not think that every problem has to be applied, on the contrary, I think that being able to do research for the pure beauty of the subject has been a tremendously fruitful and beautiful force driving a large portion of the most impactful work.
+Currently, most of the knowledge in theoretical physics and mathematics lives scattered across millions of pages</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.math.inc/sphere-packing">Math. Inc., “Formalizing sphere packing in dimensions 8 and 24”</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://openai.com/index/extending-single-minus-amplitudes-to-gravitons/">OpenAI, “Extending single-minus amplitudes to gravitons”</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-03-04T00:00:00+01:00">March 4, 2026</time></p>
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/homepage/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://replicawormhole.github.io">Leo Shaposhnik</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/homepage/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
