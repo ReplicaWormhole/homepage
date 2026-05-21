@@ -1,0 +1,382 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Research and Interests - Leo Shaposhnik</title>
+<meta name="description" content="Research in holography, quantum information, and emergent spacetime">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Leo Shaposhnik">
+<meta property="og:title" content="Research and Interests">
+<meta property="og:url" content="https://replicawormhole.github.io/homepage/research/">
+
+
+  <meta property="og:description" content="Research in holography, quantum information, and emergent spacetime">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://replicawormhole.github.io/homepage/research/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/homepage/feed.xml" type="application/atom+xml" rel="alternate" title="Leo Shaposhnik Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/homepage/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@500;600;700;800&display=swap">
+
+<script>
+MathJax = {
+  tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var containers = document.querySelectorAll(".page__content");
+  var urlPattern = /https?:\/\/[^\s<]+/g;
+  var skipTags = new Set(["A", "CODE", "PRE", "SCRIPT", "STYLE", "TEXTAREA"]);
+
+  function trimUrl(match) {
+    var url = match;
+    var trailing = "";
+
+    while (/[.,!?;:]+$/.test(url)) {
+      trailing = url.slice(-1) + trailing;
+      url = url.slice(0, -1);
+    }
+
+    while (url.endsWith(")")) {
+      var opens = (url.match(/\(/g) || []).length;
+      var closes = (url.match(/\)/g) || []).length;
+      if (closes <= opens) {
+        break;
+      }
+      trailing = ")" + trailing;
+      url = url.slice(0, -1);
+    }
+
+    return { url: url, trailing: trailing };
+  }
+
+  function shouldSkip(node) {
+    for (var el = node.parentElement; el; el = el.parentElement) {
+      if (skipTags.has(el.tagName)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  containers.forEach(function (container) {
+    var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+    var textNodes = [];
+    var current;
+
+    while ((current = walker.nextNode())) {
+      if (!current.nodeValue || !urlPattern.test(current.nodeValue) || shouldSkip(current)) {
+        urlPattern.lastIndex = 0;
+        continue;
+      }
+      urlPattern.lastIndex = 0;
+      textNodes.push(current);
+    }
+
+    textNodes.forEach(function (node) {
+      var text = node.nodeValue;
+      var fragment = document.createDocumentFragment();
+      var lastIndex = 0;
+      var match;
+
+      urlPattern.lastIndex = 0;
+      while ((match = urlPattern.exec(text)) !== null) {
+        var trimmed = trimUrl(match[0]);
+        var start = match.index;
+
+        if (start > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, start)));
+        }
+
+        var link = document.createElement("a");
+        link.href = trimmed.url;
+        link.textContent = trimmed.url;
+        fragment.appendChild(link);
+
+        if (trimmed.trailing) {
+          fragment.appendChild(document.createTextNode(trimmed.trailing));
+        }
+
+        lastIndex = match.index + match[0].length;
+      }
+
+      if (lastIndex === 0) {
+        return;
+      }
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      node.parentNode.replaceChild(fragment, node);
+    });
+  });
+});
+</script>
+
+  </head>
+
+  <body class="layout--single">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/homepage/">
+          Leo Shaposhnik
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/homepage/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/homepage/research/"
+                
+                
+              >Research</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/homepage/blog/"
+                
+                
+              >Blog</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/homepage/cv/leo_shaposhnik_cv.pdf"
+                
+                
+              >CV</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Research and Interests">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://replicawormhole.github.io/homepage/research/" itemprop="url">Research and Interests
+</a>
+          </h1>
+          
+
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h2 id="physics">Physics</h2>
+<p>I believe that it should be possible to understand microscopic physical phenomena purely in the language of quantum information processing (quantum computing), 
+rather than being bound to a particular model (theory). This idea “It from bit” was coined by John Wheeler and I think that understanding the role it plays in nature at its deepest levels is one of the big problems in fundamental science.
+A particular strong instance of this idea is AdS/CFT, where a higher dimensional theory that involves gravity is dual (equivalent) to a lower dimensional theory. These dual theories are respectively called the bulk and the boundary theory. 
+A modern perspective on this duality is that the bulk theory emerges from the boundary theory and encodes certain properties of the lower dimensional theory in the extra dimension. For example, it was demonstrated by Ryu and Takayanagi, that the area of a surface in the bulk quantifies the entanglement entropy present between subsystems of the boundary theory. This was lifted to the idea, that the bulk geometry is a representation of the quantum information structure of the boundary theory. In this sense, the 
+“theory” has strikingly different realizations. More precisely, the area (which encodes the gravitational field or the “physical phenomenon”) can be represented as a purely quantum informational quantity (entanglement entropy). I believe that this should be a general feature, that the physical entities (the its) and their interactions (the processes) should be representable as purely quantum informational quantities (bits), where the original “shape” of the entity has disappeared and all thats there at the core is the division of the world into subsystems and their relations. 
+One approach that has been fairly fruitful is to use tools from the theory of operator algebras to reason about properties of emergent features in the bulk, which is my main area of research at the moment, as the framework of algebraic quantum field theory lifts oneself from the perspective that the fundamental object is the field (the entity) towards the perspective that the fundamental object is an algebra (a subsystem).</p>
+
+<h2 id="computing-and-ai">Computing and AI</h2>
+<p>I think that the current capabilities of LLMs have far surpassed the threshold of being “useful” in theoretical science and will constitute a major shift in how theoretical science is done. 
+A major component of the work one does in theory amounts to things that one “in principle knows how to do” but that are tedious to do. For example, large algebraic calculations can span hundreds of pages but <em>most</em> of the steps are mechanic (plug this into that, try out these identities etc) and prone to errors if done by hand. Computer algebra systems remove the errors, but one still has to sit there and implement the calculation by hand, which again is tedious. However, all of these tasks one can describe in natural language and thus, an AI can <em>in principle</em> perform it.
+By now it is clear that current systems are powerful enough to understand natural language to a degree, that they can autonomously implement large pieces of code. 
+This capability is directly translateable to scientific exploration I just described. I think that, if you know what to do in words, in the future we will not have to do the tedious labor ourselves.
+Current publicly available systems, while powerful, are not yet reliable calculators, in the sense that they make very subtle mistakes and one has to manually check every single step. However, we have already seen the capabilities of these systems in doing highly nontrivial calculations correctly. 
+I think leveraging this and making them <em>reliable</em> assistants, 
+that produce <em>correct</em> calculations and verifiable proofs is a necessary step towards 
+having large scale adaptations of AI systems in theoretical sciences.
+Based on this, I am very interested in building systems that allow humans to harness the power of large language models to perform open-ended scientific exploration in unprecedented scale.</p>
+
+<h2 id="organisation-of-science">Organisation of Science</h2>
+<p>I think that the rise of AI towards systems that can perform nontrivial scientic tasks correctly will drastically shift what it means to do science and how we will organise the knowledge we have. 
+Currently, the value of a scientist is evaluated by the amount of papers they published in high-impact journals and what grants they obtained. 
+This forces us to optimize to write more papers, not to solve hard problems. 
+The latter is hard and results in fewer papers than mindlessly calculating the same quantity over and over again in different systems, without any idea why.
+I think we have to change this incentive, abolish the journal system and change the structure of how science is organised, away from scattered results over millions of pages in papers, towards structures that allow easy access to the knowledge out there. 
+I think papers as preprints will still be important for the dissemination of ideas, but a paper on its own only integrates loosely with the tower of knowledge it is built on. 
+It is tedious to work through a paper. Most importantly, you cannot talk to it.
+I am interested in building a framework under which we can organise science to allow for large scale collaborations that tackle hard problems. Where the knowledge is queryable and verified. Where one can have distributed teams working on different aspects of a problem. Towards collaboration rather than competition.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+
+  
+
+
+        
+
+
+
+      </footer>
+
+      
+
+      
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/homepage/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://replicawormhole.github.io">Leo Shaposhnik</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/homepage/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
