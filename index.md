@@ -8,13 +8,13 @@ permalink: /
 <section class="home-hero">
   <div class="home-hero__lead">
     <figure class="home-portrait">
-      <img src="{{ '/CA_cropped.JPG' | relative_url }}" alt="Portrait of Lev Shaposhnik">
+      <img src="{{ '/CA_cropped.JPG' | relative_url }}" alt="Portrait photo">
     </figure>
 
     <p class="home-hello">Hi!</p>
 
     <div class="home-lead-copy">
-      <p>I am Lev, a third year PhD student in theoretical physics at FU Berlin.</p>
+      <p>I'm a third-year PhD student in theoretical physics at FU Berlin.</p>
 
       <p>I am interested in the study of spacetime, quantum information and computer science.</p>
     </div>
