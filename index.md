@@ -14,21 +14,21 @@ permalink: /
     <p class="home-hello">Hi!</p>
 
     <div class="home-lead-copy">
-      <p>I'm a third-year PhD student in theoretical physics at FU Berlin.</p>
+      <p>I'm Lev, a final-year PhD student in theoretical physics at FU Berlin.</p>
 
-      <p>I am interested in the study of spacetime, quantum information and computer science.</p>
+      <p>I study the relationship between spacetime and quantum information theory.</p>
     </div>
   </div>
 
   <aside class="home-contact-card">
     <div class="home-contact-card__body">
-      <p>Currently I spent a lot of time to try to figure out how to best use AI agents to help me do science.</p>
+      <p>I currently spend a lot of time trying to figure out how best to use AI agents to help us do science.</p>
 
       <p>I am always open for collaboration and exchange of ideas.</p>
     </div>
 
     <div class="home-contact-card__footer">
-      <p>Contact me via email: <span class="email-obf" data-user="<firstnamelastname>" data-domain="gmail.com"></span></p>
+      <p>Contact me via email: <span class="email-obf" data-user="leoshaposhnik" data-domain="gmail.com"></span></p>
 
       <div class="social-buttons">
         <a class="social-btn" href="https://x.com/chumwonktonodI" target="_blank" rel="noopener" aria-label="X">

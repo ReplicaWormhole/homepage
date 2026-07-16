@@ -4,6 +4,10 @@ Post visibility:
 - `published: true` makes a post visible on `/blog/` and reachable at its post URL.
 - `published: false` keeps the post out of `/blog/` and prevents Jekyll from publishing its page, feed entry, and sitemap entry.
 
+Blog sections:
+- Add `section: theory`, `section: practice`, or `section: musings` to every published post.
+- Posts appear on `/blog/` and in their corresponding section archive.
+
 Blog citations:
 - Use kramdown footnotes to create paper-style citations with superscript numbers in the text and a references list at the bottom of the post.
 - Example:
