@@ -1,0 +1,220 @@
+\PassOptionsToPackage{colorlinks=true,allcolors=linkblue}{hyperref}
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext}
+\usepackage{ragged2e}
+%\usepackage[scale=0.92]{geometry}
+\usepackage[
+  a4paper,
+  top=9mm,
+  bottom=1mm,
+  left=10mm,
+  right=10mm
+]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt}
+\definecolor{linkblue}{HTML}{1F3558}
+\AtBeginDocument{%
+  \hypersetup{colorlinks=true,allcolors=linkblue}%
+}
+
+\name{Leo}{Shaposhnik}
+
+\newcommand*{\customcventry}[7][.13em]{
+	\begin{tabular}{@{}l}
+		{\bfseries #4}\\
+		{\itshape #3}
+	\end{tabular}
+	\hfill
+	\begin{tabular}{l@{}}
+		{\bfseries #5}\\
+		{\itshape #2}
+	\end{tabular}
+	\ifx&#7&%
+	\else{\\
+		\begin{minipage}{\maincolumnwidth}%
+			\small#7%
+	\end{minipage}}\fi%
+	\par\addvspace{#1}}
+
+\begin{document}
+\makecvtitle
+\vspace*{-13mm}
+
+\begin{center}
+	\large
+	\begin{tabular}{ @{}c@{\hspace{10pt}}c@{\hspace{10pt}}c@{\hspace{10pt}}c@{\hspace{10pt}}c@{\hspace{10pt}}c@{\hspace{10pt}}c@{} }
+		\href{https://replicawormhole.github.io/homepage/}{\faGlobe} &
+		\href{mailto:leoshaposhnik@gmail.com}{\faEnvelope} &
+		\href{https://github.com/ReplicaWormhole}{\faGithub} &
+		\href{https://www.linkedin.com/in/leo-shaposhnik-7533801b5/}{\faLinkedin} &
+		\href{https://orcid.org/0000-0001-8258-6233}{\faOrcid} &
+		\href{https://inspirehep.net/authors/2605231}{\faAtom} \\
+	\end{tabular}\normalsize
+\end{center}
+
+\vspace*{-8mm}
+
+% =====================
+
+% =====================
+\section{Overview}
+\vspace*{-2mm}
+I am a theoretical physicist who builds agentic systems for open-ended scientific discovery.
+In this capacity, I design and build adversarial AI systems for the development
+of mathematical theories of physical systems and develop
+code for the large-scale simulation of many-body systems on HPC clusters.
+I have 10+ years of experience writing code, including 6+ years of experience
+contributing to academic codebases and 1+ year contributing to production
+codebases in industry as an IT consultant. I lead several research projects
+from initial conception through completion and publication in international
+journals.
+Over the past year I have
+developed a deep interest in knowledge representation, formal
+verification and mechanistic
+reasoning as approached by transformers, dependent type
+theory and category theory.
+\vspace*{-2mm}
+
+\section{Current Position}
+\vspace*{-2mm}
+
+\customcventry{04/2023 -- present}
+{Freie Universität Berlin}
+{PhD in Theoretical Physics}
+{Berlin, Germany}
+{}{
+\begin{itemize}[leftmargin=0.6cm, label=\textbullet]
+	\setlength\itemsep{0.2em}
+    \item Conduct research at the intersection of quantum information theory, tensor
+        networks and high-energy physics.
+    \item Experiment with multi-agent systems and context engineering for reliable
+        collaboration on open-ended discovery.
+    \item Implement parallelized high-performance code for the
+        simulation of many-body systems on
+        HPC clusters.
+    \item Lead multiple international collaborations from the initial idea
+        towards publication.
+    \item Optimize RNNs and multiscale CNNs for the numerical study of quantum
+        states.
+    \item Co-organize a weekly seminar on quantum many-body physics.
+	\item Teach courses on quantum mechanics, gravity and quantum information.
+\end{itemize}
+}
+\section{Previous Experience}
+\vspace*{-2mm}
+
+\customcventry{11/2021 -- 03/2023}
+{d-fine GmbH}
+{IT Consultant}
+{Berlin, Germany}
+{}{
+\begin{itemize}[leftmargin=0.6cm, label=\textbullet]
+	\setlength\itemsep{0.2em}
+	\item Owned a core software component of a production-grade IFRS 17
+        reporting backend for an international reinsurer.
+    \item Coordinated feature planning and implementation with
+        client stakeholders.
+    \item Supported testing, deployment and bug-fixing across the whole
+        project.
+\end{itemize}
+}
+
+\customcventry{07/2020 -- 10/2021}
+{Physikalisch-Technische Bundesanstalt (PTB)}
+{Working Student — Mathematical Modeling and Data Analysis}
+{Berlin, Germany}
+{}{
+\begin{itemize}[leftmargin=0.6cm, label=\textbullet]
+	\setlength\itemsep{0.2em}
+	\item Formulated theoretical models to study roundoff-induced effects in classical chaotic systems.
+		\item Performed high-precision long-time simulations of chaotic systems on
+	        an HPC cluster.
+\end{itemize}
+}
+
+\customcventry{\hspace{4pt} 03/2017 -- 06/2020}
+{DESY}
+{Working Student}
+{Zeuthen, Germany}
+{}{
+\begin{itemize}[leftmargin=0.6cm, label=\textbullet]
+	\setlength\itemsep{0.2em}
+	\item Designed and set up optical experiments to measure
+        radiation damage in optical components for a linear accelerator.
+		\item Analyzed the concentration of radioactive material in accelerator
+        components with MATLAB.
+\end{itemize}
+}
+
+\section{Education}
+\vspace*{-2mm}
+
+\customcventry{10/2019 -- 02/2022}
+{Humboldt-Universität zu Berlin / Albert Einstein Institute}
+{Master’s Degree — Physics (Avg. Grade: 1.0 / GPA: 4.0)}
+{Berlin, Germany}
+{}{
+Thesis on entanglement entropy in curved spacetime, including analytical derivations and numerical validation using tensor network techniques.
+}
+
+\customcventry{10/2016 -- 09/2019}
+{Humboldt-Universität zu Berlin}
+{Bachelor’s Degree — Physics (Avg. Grade: 1.7 / GPA: 3.3)}
+{Berlin, Germany}
+{}{
+Thesis on Hopf-algebraic structures underlying perturbative renormalization in quantum field theory.
+}
+% =====================
+\section{Technologies}
+\vspace*{-2mm}
+\setlength{\columnsep}{8pt}
+\begin{multicols}{3}
+\begin{itemize}[label=\textbullet, leftmargin=*, nosep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+    \item \textbf{Python}: PyTorch, Triton, SciPy, \newline Hugging Face Transformers
+\item \textbf{High-performance computing}: C++, CUDA, Linux, Slurm
+\item \textbf{Agent systems}: OpenAI API, Anthropic API, LangGraph, MCP, RAG
+  \item \textbf{Data}: SQL, SAS, Pandas
+  \item \textbf{Formal methods}: Lean 4
+  \item \textbf{Scientific computing}: Julia, MATLAB, Wolfram Language
+  \item \textbf{Version control \& CI/CD}: Git, Github, Azure DevOps
+
+
+\end{itemize}
+\end{multicols}
+
+\section{Awards \& Honors}
+\vspace*{-2mm}
+\begin{itemize}[leftmargin=0.6cm, label=\textbullet]
+	\setlength\itemsep{0.2em}
+	\item Honorable mention for my poster ``On Infinite Tensor Networks, Complementary Recovery and Type II Factors''. QIQG 2025, Perimeter Institute.
+\end{itemize}
+\newpage
+% =====================
+\section{Publications}
+\vspace*{-2mm}
+\begin{itemize}[leftmargin=0.6cm, label=\textbullet]
+	\setlength\itemsep{0.2em}
+	\item \textbf{On Infinite Tensor Networks, Complementary Recovery and Type II Factors}. W. Chemissany, E. Gesteau, A. Jahn, D. Murphy, \textbf{L. Shaposhnik}. J. Phys. A 58 (2025) 435301.
+	\item \textbf{Searching for Emergent Spacetime in Spin Glasses}. D. Saraidaris, \textbf{L. Shaposhnik}. JHEP 04 (2026) 032.
+\end{itemize}
+
+\section{Languages}
+\vspace*{-2mm}
+\setlength{\columnsep}{8pt} % tighten spacing between the 4 columns (default is larger)
+\begin{multicols}{4}
+\begin{itemize}[label=\textbullet, leftmargin=*, nosep, topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0pt]
+	\item \textbf{English} (Fluent)
+	\item \textbf{German} (Native)
+	\item \textbf{Russian} (Native)
+	\item \textbf{Ukrainian} (Beginner)
+\end{itemize}
+\end{multicols}
+
+\end{document}
