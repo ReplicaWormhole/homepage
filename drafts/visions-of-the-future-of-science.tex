@@ -1,0 +1,153 @@
+% Working draft for a future Musings post.
+% Compile from the repository root with:
+%   mkdir -p /tmp/visions-of-the-future-of-science
+%   pdflatex -interaction=nonstopmode -output-directory /tmp/visions-of-the-future-of-science drafts/visions-of-the-future-of-science.tex
+%
+% Once the text is ready, adapt it to the site's Markdown front matter and
+% publish it under _posts/ with `section: musings`.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=30mm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Assistant-proposed prose is deliberately visible while this remains a
+% collaborative working draft.  Remove \AI{} when the wording is accepted.
+\newcommand{\AI}[1]{{\color{blue}\textit{AI draft: #1}}}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  pdftitle={Visions of the Future of Science},
+  pdfauthor={Leo Shaposhnik}
+}
+
+\title{Visions of the Future of Science}
+\author{Leo Shaposhnik}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% This file deliberately starts as a clean writing scaffold.  Draft prose below
+% can be copied into the eventual Markdown post with only light formatting.
+
+\begin{abstract}
+What should science become when AI systems can participate in the work of
+discovery?  This essay considers the opportunities, responsibilities, and
+institutional choices that will shape that answer.
+\end{abstract}
+
+\section{The question}
+
+\subsection{From papers to an integrated body of knowledge}
+
+I would like to argue for the emergence of a new type of knowledge
+representation away from papers towards something more integrated that we can
+parse, inspect, and add to in a modular fashion.
+
+\AI{The question is not merely what AI will allow individual scientists to do
+faster, but what kind of scientific record we should build for a world in which
+both people and agents can read, compare, and extend an enormous body of work.
+At present, scientific knowledge is primarily preserved as papers: texts first
+shared as preprints and, often later, placed in journals after peer review.
+Papers are connected mainly by citations.  Yet a citation usually points to an
+entire paper rather than to the particular definition, calculation, argument,
+or qualification on which later work relies.  The resulting literature is
+extraordinarily valuable, but it is only loosely interconnected and difficult
+to traverse at the level where scientific arguments actually depend on one
+another.}
+
+\AI{This is a suboptimal representation of knowledge, especially now that
+agents can work through large amounts of text quickly.  It is also an
+opportunity.  Rather than asking machines merely to summarize or reproduce the
+existing literature, we could use them to help construct a representation of
+scientific knowledge that is more explicit about what is assumed, what is
+claimed, and how one claim is transformed into another.  Such a representation
+would be useful not only for scale, but also for rigor: it would make the
+dependencies of an argument easier to inspect and its weakest assumptions
+easier to locate.}
+
+\AI{The closest existing model is a proof assistant such as Lean.  In a mature
+formal theory, typed statements and verified proofs make relations between
+results mechanically explicit.  This is an important ideal, but it is not yet
+a universal template for theoretical physics.  Many physical theories---string
+theory is one example---are not specified sharply enough for their full content
+to be formalized.  Moreover, formalization is not merely the act of writing
+code: one must also judge whether the formal object faithfully represents the
+informal idea.  The aim need therefore not be that every scientific claim
+immediately compiles.}
+
+\AI{A more attainable intermediate goal is a typed or semi-typed account of
+scientific reasoning.  A theory contains assumptions, claims, and procedures
+that transform some claims into others.  Those procedures can have different
+epistemic status: a heuristic argument, a rigorous derivation, a numerical
+calculation, a symbolic computation, or an empirical inference.  In this
+limited sense, scientific work resembles a network of morphisms: claims are
+related by transformations whose inputs, outputs, and status should be made
+visible.  A new result could then be integrated not just by attaching another
+document to the archive, but by recording how it depends on and modifies the
+structure already present.}
+
+\AI{The representation should be developed at a scale where shared standards
+are realistic.  A research community could define the objects, claims, and
+argument forms that matter in its own field: quantum circuits and inequalities
+in quantum information, for example.  The point is not to impose a single
+universal ontology on all science.  It is to make local scientific languages
+explicit enough that work becomes modular.  Individual projects can contribute
+small, reviewable pieces to a shared whole, while the relations between those
+pieces remain available for people and machines to follow.}
+
+\AI{Lamport-style structured arguments suggest one practical model.  Each step
+of an argument can be presented either as an introduced assumption or as a
+claim justified by specified earlier steps.  Even when the justification is not
+a formally checked proof, this exposes the flow of reasoning.  A representation
+built from such steps would allow a reader---or an agent---to traverse an
+argument, inspect individual dependencies, and see precisely where trust is
+being placed.}
+
+\AI{The largest gain would be a more reliable foundation for agent-assisted
+research.  As long as a theory is not fully formalized, our confidence rests on
+the assumptions we accept and the transformations of those assumptions that we
+trust.  We should therefore make both as inspectable as possible.  A shared
+knowledge base with explicit provenance and dependencies would give agents a
+body of work they can cite, query, and extend in ways that are easier to verify
+than a free-standing generated text.  It would also let scientists check the
+relevant parts of an argument without having to reconstruct the whole history
+of a field.}
+
+\AI{This vision has institutional consequences.  If a contribution is a
+reviewable extension of an open, living knowledge artifact, then scientific
+credit and review need not be organized solely around the publication of a
+closed paper in a journal.  Review could become a visible collective practice
+of maintaining the reliability of shared infrastructure.  Such an approach
+would support open science, concurrent collaboration, and larger projects in
+which different groups contribute interoperable pieces.  The challenge is to
+design the type systems, governance, incentives, and interfaces that make this
+possible without turning scientific judgment into a bureaucratic schema.}
+
+\section{What becomes abundant}
+
+% Discuss tasks that AI can make cheaper or faster, without equating abundance
+% of output with abundance of understanding.
+
+\section{What remains scarce}
+
+% Discuss judgment, taste, trust, verification, problem choice, and collaboration.
+
+\section{Institutions for a better scientific future}
+
+% Develop concrete visions for incentives, shared infrastructure, and evaluation.
+
+\section{An invitation}
+
+% Close with the constructive question or proposal you want readers to take away.
+
+\end{document}
