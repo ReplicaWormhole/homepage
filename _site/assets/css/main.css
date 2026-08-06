@@ -1408,5 +1408,4 @@ a:hover, a:focus { color: var(--ink); text-decoration-color: var(--ink); }
   .page__content { padding-top: 3rem; }
   .home-portrait { width: min(160px, 48vw); margin-bottom: 1.5rem; }
   .home-lead-copy p:first-child { font-size: clamp(38px, 11.5vw, 54px); }
-  .home-lead-copy p:last-child { margin-top: 1.5rem; font-size: 0.98rem; }
-  .greedy-nav .visible-links { display: none; } }
+  .home-lead-copy p:last-child { margin-top: 1.5rem; font-size: 0.98rem; } }
