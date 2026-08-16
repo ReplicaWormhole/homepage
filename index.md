@@ -71,7 +71,11 @@ permalink: /
   const user = el.getAttribute("data-user");
   const domain = el.getAttribute("data-domain");
   const addr = `${user}@${domain}`;
-  el.textContent = addr;
-  el.setAttribute("aria-label", addr);
+  const link = document.createElement("a");
+  link.className = el.className;
+  link.href = `mailto:${addr}`;
+  link.textContent = addr;
+  link.setAttribute("aria-label", addr);
+  el.replaceWith(link);
 })();
 </script>
