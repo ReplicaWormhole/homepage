@@ -8,6 +8,78 @@ MathJax = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% if site.goatcounter_code %}
+<script>
+(function () {
+  "use strict";
+
+  // Honour the browser's explicit Do Not Track preference before loading any
+  // analytics code. GoatCounter uses cookie-free aggregate statistics.
+  var doNotTrack = navigator.doNotTrack || window.doNotTrack;
+  if (doNotTrack === "1" || doNotTrack === "yes") {
+    return;
+  }
+
+  window.goatcounter = {
+    endpoint: "https://{{ site.goatcounter_code | escape }}.goatcounter.com/count"
+  };
+
+  var analytics = document.createElement("script");
+  analytics.async = true;
+  analytics.src = "https://gc.zgo.at/count.js";
+  document.head.appendChild(analytics);
+
+  var pendingEvents = [];
+  function track(name) {
+    var event = { path: name, event: true, no_session: true };
+    if (typeof window.goatcounter.count === "function") {
+      window.goatcounter.count(event);
+    } else {
+      pendingEvents.push(event);
+    }
+  }
+
+  analytics.addEventListener("load", function () {
+    pendingEvents.forEach(function (event) {
+      window.goatcounter.count(event);
+    });
+    pendingEvents = [];
+  });
+
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest("a[href]");
+    if (!link) {
+      return;
+    }
+
+    var href = link.href;
+    if (href.indexOf("mailto:") === 0) {
+      track("Email Link Click");
+      return;
+    }
+
+    if (link.pathname.endsWith("/cv/leo_shaposhnik_cv.pdf")) {
+      track("CV Download");
+      return;
+    }
+
+    if (!/^https?:$/.test(link.protocol) || link.hostname === window.location.hostname) {
+      return;
+    }
+
+    var destination = "other";
+    if (link.hostname === "github.com") {
+      destination = "github";
+    } else if (link.hostname === "arxiv.org") {
+      destination = "arxiv";
+    } else if (link.hostname.endsWith("linkedin.com")) {
+      destination = "linkedin";
+    }
+    track("External Link Click: " + destination);
+  });
+}());
+</script>
+{% endif %}
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var containers = document.querySelectorAll(".page__content");
