@@ -8,6 +8,10 @@ url: "https://replicawormhole.github.io"
 baseurl: "/homepage"
 repository: "ReplicaWormhole/homepage"
 
+# This is the site code from GoatCounter's installation snippet.
+# The tracking code respects a visitor's Do Not Track preference.
+goatcounter_code: "leoshaposhnik"
+
 markdown: kramdown
 kramdown:
   math_engine: mathjax
